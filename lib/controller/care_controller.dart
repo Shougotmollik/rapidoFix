@@ -7,5 +7,8 @@ class CareController extends GetxController {
     CareModel(imagePath: 'assets/images/care1.png', title: 'Spark Plug'),
     CareModel(imagePath: 'assets/images/care2.png', title: 'Clutch Shoe'),
     CareModel(imagePath: 'assets/images/care3.png', title: 'Hose Fuel'),
+    CareModel(imagePath: 'assets/images/care1.png', title: 'Spark Plug'),
+    CareModel(imagePath: 'assets/images/care2.png', title: 'Clutch Shoe'),
+    CareModel(imagePath: 'assets/images/care3.png', title: 'Hose Fuel'),
   ];
 }

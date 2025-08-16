@@ -6,10 +6,12 @@ class HeadingTextWidget extends StatelessWidget {
     super.key,
     required this.headingText,
     required this.onTap,
+    required this.buttonText,
   });
 
   final String headingText;
   final VoidCallback onTap;
+  final String buttonText;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class HeadingTextWidget extends StatelessWidget {
         TextButton(
           onPressed: onTap,
           child: Text(
-            'View all',
+            buttonText,
             style: textTheme.headlineSmall?.copyWith(
               fontSize: 14,
               fontWeight: FontWeight.w400,

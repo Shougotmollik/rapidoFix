@@ -20,7 +20,7 @@ class CareScreen extends StatelessWidget {
       appBar: CustomAppBar(appBarTitle: 'Care'),
 
       body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
@@ -30,11 +30,13 @@ class CareScreen extends StatelessWidget {
               HeadingTextWidget(
                 headingText: 'Care Recommendations',
                 onTap: () {},
+                buttonText: 'View all',
               ),
               _buildCareRecommendationSection(size, careController),
               HeadingTextWidget(
                 headingText: 'Buy Service Packages',
                 onTap: () {},
+                buttonText: 'View all',
               ),
               _buildServicePackageSection(homeController),
             ],
@@ -54,7 +56,7 @@ class CareScreen extends StatelessWidget {
       ),
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: 4,
+      itemCount: 6,
       itemBuilder: (context, index) =>
           ServiceCardWidget(serviceModel: homeController.services[index]),
     );
@@ -71,7 +73,7 @@ class CareScreen extends StatelessWidget {
         itemBuilder: (context, index) =>
             CareCardWidget(careModel: careController.cares[index]),
         separatorBuilder: (context, index) => SizedBox(width: 12),
-        itemCount: 3,
+        itemCount: 4,
       ),
     );
   }

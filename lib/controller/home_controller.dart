@@ -90,5 +90,26 @@ class HomeController extends GetxController {
       originalPrice: 1500,
       discountPercentage: 10,
     ),
+    ServiceModel(
+      title: 'Teflon Coating',
+      imagePath: 'assets/images/service2.png',
+      price: 1350,
+      originalPrice: 1500,
+      discountPercentage: 10,
+    ),
+    ServiceModel(
+      title: 'Annual Maintenance',
+      imagePath: 'assets/images/service3.png',
+      price: 900,
+      originalPrice: 1000,
+      discountPercentage: 10,
+    ),
+    ServiceModel(
+      title: 'Teflon Coating',
+      imagePath: 'assets/images/service4.png',
+      price: 1350,
+      originalPrice: 1500,
+      discountPercentage: 10,
+    ),
   ];
 }

@@ -24,15 +24,28 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             children: [
-              HeadingTextWidget(headingText: 'Nearby Users', onTap: () {}),
+              HeadingTextWidget(
+                headingText: 'Nearby Users',
+                onTap: () {},
+                buttonText: 'View all',
+              ),
               _buildNearbyUserSection(size, homeController),
-              HeadingTextWidget(headingText: 'Deals of the day', onTap: () {}),
+              HeadingTextWidget(
+                headingText: 'Deals of the day',
+                onTap: () {},
+                buttonText: 'View all',
+              ),
               _buildDealsOfDaySection(size, homeController),
-              HeadingTextWidget(headingText: 'Upcoming Events', onTap: () {}),
+              HeadingTextWidget(
+                headingText: 'Upcoming Events',
+                onTap: () {},
+                buttonText: 'View all',
+              ),
               _buildUpcomingEventSection(size, homeController),
               HeadingTextWidget(
                 headingText: 'Buy Service Packages',
                 onTap: () {},
+                buttonText: 'View all',
               ),
               _buildServiceSection(size, homeController),
             ],
