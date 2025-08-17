@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rapidofix/constants/app_colors.dart';
 import 'package:rapidofix/controller/care_controller.dart';
 import 'package:rapidofix/controller/home_controller.dart';
-import 'package:rapidofix/views/widgets/main_nav/bike_change_button_widget.dart';
 import 'package:rapidofix/views/widgets/main_nav/care_card_widget.dart';
 import 'package:rapidofix/views/widgets/main_nav/custom_app_bar.dart';
 import 'package:rapidofix/views/widgets/main_nav/heading_text_widget.dart';
@@ -25,8 +25,15 @@ class CareScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
-              BikeChangeButtonWidget(),
-              Divider(thickness: 1, color: Colors.grey),
+              Container(
+                color: Colors.white,
+                child: HeadingTextWidget(
+                  headingText: 'Bike Name',
+                  onTap: () {},
+                  buttonText: 'Change',
+                ),
+              ),
+              Divider(thickness: 3, color: AppColors.purpleColor.withAlpha(20)),
               HeadingTextWidget(
                 headingText: 'Care Recommendations',
                 onTap: () {},

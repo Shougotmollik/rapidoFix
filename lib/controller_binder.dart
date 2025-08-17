@@ -3,6 +3,7 @@ import 'package:rapidofix/controller/care_controller.dart';
 import 'package:rapidofix/controller/home_controller.dart';
 import 'package:rapidofix/controller/nav_bar_controller.dart';
 import 'package:rapidofix/controller/product_controller.dart';
+import 'package:rapidofix/controller/shop_controller.dart';
 
 class ControllerBinder extends Bindings {
   @override
@@ -11,5 +12,6 @@ class ControllerBinder extends Bindings {
     Get.lazyPut<HomeController>(() => HomeController());
     Get.lazyPut<CareController>(() => CareController());
     Get.lazyPut<ProductController>(() => ProductController());
+    Get.lazyPut<ShopController>(() => ShopController());
   }
 }
